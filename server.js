@@ -101,7 +101,6 @@ app.get('/health', (req, res) => {
         status: 'ok', 
         uptime: process.uptime().toFixed(2),
         timestamp: new Date().toISOString(),
-        uploadsDir: uploadDir,
         carnetsAutorizados: Array.from(CARNEts_AUTORIZADOS),
         pendingRequests: requests.length
     });

@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-        const response = await fetch('http://localhost:3000/submit-form', {
+        const response = await fetch('https://helpdesklanding.vercel.app/submit-form', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body)
