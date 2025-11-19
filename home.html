@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assitify - Soporte Técnico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="assets/logo.png" alt="" />
+                </div>
+                <h1 class="logo-text">Assistify</h1>
+            </div>
+            <div class="header-info">
+                <p>
+                    Complete el formulario para que nuestro equipo de soporte pueda
+                    atender su solicitud.
+                </p>
+            </div>
+        </div>
+
+        <form action="#" method="POST" class="support-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="numeroCarnet" class="required">Número de carnet</label>
+                <div class="input-group">
+                    <i class="fas fa-id-card input-icon"></i>
+                    <input type="number" id="numeroCarnet" name="numeroCarnet" class="form-control" placeholder="123456"
+                        required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="categoria" class="required">Categoría de la Incidencia</label>
+                <div class="input-group">
+                    <select id="categoria" name="categoria" class="form-control" required>
+                        <option value="" disabled selected>
+                            Selecciona una categoría
+                        </option>
+                        <option value="hardware">Problemas de Hardware</option>
+                        <option value="software">Problemas de Software</option>
+                         <option value="cuentas">Problemas de Cuentas</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="problema" class="required">Describe tu Problema</label>
+                <div class="input-group">
+                    <i class="fas fa-align-left input-icon"></i>
+                    <textarea id="problema" name="problema" class="form-control"
+                        placeholder="Describe detalladamente..." required></textarea>
+                </div>
+            </div>
+
+            <!-- FILE UPLOAD -->
+<div class="form-group">
+    <label>Adjuntar Archivos (Opcional)</label>
+    <div class="file-upload">
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p id="upload-text">Arrastra o haz clic para adjuntar</p>
+        <small id="upload-hint">Máx. 10MB • JPG, PNG, PDF</small>
+        <ul id="file-list"></ul>
+        <input type="file" id="adjuntos" name="adjuntos" multiple />
+    </div>
+</div>
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Enviar Solicitud
+            </button>
+        </form>
+
+        <p class="form-note">
+            <i class="fas fa-clock"></i>
+            Nuestro equipo responderá en un plazo máximo de 24 horas hábiles.
+        </p>
+    </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/logic.js"></script>
+</body>
+
+</html>
