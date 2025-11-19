@@ -116,6 +116,9 @@ app.use((err, req, res, next) => {
         timestamp: new Date().toISOString()
     });
 });
+// Servir archivos estáticos 
+app.use(express.static('public'));
+
 
 // Iniciar el servidor
 app.listen(port, () => {
