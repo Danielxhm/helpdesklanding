@@ -5,7 +5,7 @@ const axios = require('axios');
 
 const app = express();
 const port = 3000;
-const N8N_URL = "https://governor-europe-robbie-specs.trycloudflare.com/webhook/assistify";
+const N8N_URL = "https://governmental-kerry-forwarding-internal.trycloudflare.com/webhook/assistify";
 // Lista de carnets autorizados
 const CARNEts_AUTORIZADOS = new Set([
     '482915', '037428', '691204', '558392', '824719',
